@@ -19,7 +19,7 @@ public class ContaCorrente {
 	}
 
 	public void transfere(ContaCorrente c2, double valor) {
-		if (valor > 0 && c2 != null) {
+		if (c2 != null && valor > 0) {
 			this.sacar(valor);
 			c2.depositar(valor);
 		} else {
